@@ -12,7 +12,7 @@
 <body>
 <nav class="nav-extended black">
     <div class="nav-wrapper">
-        <a href="#" class="brand-logo pink-text">Logo</a>
+        <a href="#" class="brand-logo pink-text">Always Be My Maybe</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons pink-text">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="index.html">Home</a></li>
@@ -24,11 +24,11 @@
     </div>
 </nav>
 <div class="col s12 m4 center">
-    <img class="logoPic" src="images/always.png" alt="">
+    <img class="logoPic responsive-img" src="images/always.png" alt="">
 </div>
 
 <!-- shop menu -->
-<div id="shop">
+<div id="shop" class="hide-on-med-and-down">
     <h2 id="shopHeader" class="pink-text accent-2">SHOP</h2>
     <div class="shopMenu">
         <div class="shop card">
@@ -47,14 +47,28 @@
 </div>
 <!-- end shop menu -->
 <!-- on sale menu -->
-<div id="onSale">
-    <div class="carousel carousel-slider"
-         data-indicators="true">
-        <a href="#one" class="carousel-item"><img src="https://images.unsplash.com/photo-1573706376056-55f27105ff17?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="img"></a>
-        <a href="#two" class="carousel-item"><img src="https://images.unsplash.com/photo-1573697610008-4c72b4e9508f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="img"></a>
-        <a href="#three" class="carousel-item"><img src="https://images.unsplash.com/photo-1573665774502-1fbe81d4d7f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="img"></a>
+<div class="container">
+
+    <h3>Materialize Carousel Demo</h3>
+
+    <div class="carousel carousel-slider" id="demo-carousel-auto" data-indicators="true">
+
+        <a class="carousel-item" href="#one!"><img src="images/carousel-2.jpeg"></a>
+
+        <a class="carousel-item" href="#two!"><img src="images/carousel-3.png"></a>
+
+        <a class="carousel-item" href="#three!"><img src="images/carousel-4.png"></a>
+
+        <a class="carousel-item" href="#four!"><img src="images/carousel-5.jpeg"></a>
+
+        <a class="carousel-item" href="#five!"><img src="images/carousel-6.jpeg"></a>
+
     </div>
+
 </div>
+
+
+
 <!-- end on sale menu -->
 
 <footer>
@@ -81,9 +95,26 @@
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<!-- custum -->
+<!-- custom -->
 <script src="./index.main.js"></script>
 <script src="js/index.js"></script>
+<script>
+
+    $(document).ready(function(){
+
+        $('#demo-carousel-auto').carousel();
+
+        setInterval(function() {
+
+            $('#demo-carousel-auto').carousel('next');
+
+        }, 1500);
+
+
+
+    });
+
+</script>
 
 
 </body>
