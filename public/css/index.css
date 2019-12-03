@@ -1,72 +1,52 @@
 body {
-  width: 100vw
+  background-image: linear-gradient(#CE96FB, #FF8FCF)
 }
+
+body header {
+  background-color: black;
+  height: 18vh
+}
+
+body header #header {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center
+}
+
+body header #checkout {
+  display: flex !important;
+  flex-direction: row !important
+}
+
 body .logoPic {
-  width: 100%;
-  height: 100%;
+  padding-top: 20px
 }
 
-#main-banner {
-  height: 250px;
-  padding: 20px 0;
-}
 body #shop {
-  /*background: rgba(255, 255, 255, 0.7);*/
-  height: 200px;
-  box-shadow: 4px 4px 4px;
-  position: relative;
-  z-index: 0;
+  background: rgba(255, 255, 255, 0.7);
+  height: 45vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  box-shadow: 4px 4px 4px
 }
-#paisley {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  opacity: .5;
-  z-index: 1;
+
+body #shopHeader {
+  text-align: center
 }
-#shop > .z-index {
-  z-index: 15;
-  position: relative;
-}
-#shop-card-wrapper {
-  border: 2px solid yellow;
-  height: 60%;
-  width: auto;
+
+body .shopMenu {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  overflow-x: scroll;
+  justify-content: space-evenly
 }
-.scroll-item {
-  display: flex;
-  justify-content: center;
-  flex: 1;
-  height: 130px !important;
-  width: 100px;
 
-
+body .shop {
+  border: black 1px solid;
+  border-radius: 7%;
+  text-align: center;
+  height: 300px;
+  width: 200px
 }
-/*body #shopHeader {*/
-/*  text-align: center*/
-/*}*/
-
-/*body .shopMenu {*/
-/*  display: flex;*/
-/*  justify-content: space-evenly*/
-/*}*/
-
-/*body .shop {*/
-/*  border: black 1px solid;*/
-/*  border-radius: 7%;*/
-/*  text-align: center;*/
-/*  height: 300px;*/
-/*  width: 200px*/
-/*}*/
 
 body #onSale {
   margin-top: 10vh;

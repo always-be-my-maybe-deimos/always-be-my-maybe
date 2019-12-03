@@ -3,28 +3,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<!--    icons-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <link rel="stylesheet" href="./css/index.css">
     <title>Always-Be-My-Maybe</title>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems);
-        });
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/index.css">
 </head>
-<body class="pink accent-2">
+<body>
 <nav class="nav-extended black">
     <div class="nav-wrapper">
-        <a href="#" class="brand-logo pink-text">Logo</a>
+        <a href="#" class="brand-logo pink-text">Always Be My Maybe</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons pink-text">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="index.html">Home</a></li>
@@ -35,18 +23,67 @@
         </ul>
     </div>
 </nav>
-<div id="main-banner">
-<img class="logoPic" src="images/always.png" alt="">
+<div class="col s12 m4 center">
+    <img class="logoPic responsive-img" src="images/always.png" alt="">
 </div>
 
 <!-- shop menu -->
-<div id="shop">
-    <img src="./images/full-bloom.png"
-         alt="paisley" id="paisley">
-    <h4 class="pink-text accent-2 center z-index">SHOP</h4>
-    <div id="shop-card-wrapper"  class="z-index"></div>
+<div id="shop" class="hide-on-med-and-down">
+    <h2 id="shopHeader" class="pink-text accent-2">SHOP</h2>
+    <div class="shopMenu">
+        <div class="shop card">
+            <h4 class="pink-text accent-2">FOUNDATION</h4>
+            <button class="shopButton">SHOP NOW</button>
+        </div>
+        <div class="shop card">
+            <h4 class="pink-text accent-2">LIPSTICK</h4>
+            <button class="shopButton">SHOP NOW</button>
+        </div>
+        <div class="shop card">
+            <h4 class="pink-text accent-2">EYESHADOW</h4>
+            <button class="shopButton">SHOP NOW</button>
+        </div>
+    </div>
 </div>
 <!-- end shop menu -->
+<!-- on sale menu -->
+<div class="container">
+
+    <h3>Materialize Carousel Demo</h3>
+
+    <div class="carousel carousel-slider" id="demo-carousel-auto" data-indicators="true">
+
+        <a class="carousel-item" href=""><img src="images/carousel-2.jpeg"></a>
+
+        <a class="carousel-item" href=""><img src="images/carousel-3.png"></a>
+
+        <a class="carousel-item" href=""><img src="images/carousel-4.png"></a>
+
+        <a class="carousel-item" href=""><img src="images/carousel-5.jpeg"></a>
+
+        <a class="carousel-item" href=""><img src="images/carousel-6.jpeg"></a>
+
+    </div>
+
+</div>
+
+
+
+<!-- end on sale menu -->
+
+<footer>
+    <div id="banner">
+        <img id="ban1" src="../public/images/banner.png" alt="">
+        <img id="ban2" src="../public/images/banner.png" alt="">
+    </div>
+    <ul id="footer">
+        <li><a class="yellow-text accent-2" href="">CONTACT US</a></li>
+        <li><a class="pink-text accent-2" href="">FAQS</a></li>
+        <li><a class="yellow-text accent-2" href="">STORE LOCATOR</a></li>
+        <li><a class="pink-text accent-2" href=""><i class="foot fab fa-instagram"></i></a></li>
+        <li><a class="yellow-text accent-2" href=""><i class="foot fab fa-facebook-f"></i></a></li>
+    </ul>
+</footer>
 
 
 <script
@@ -58,9 +95,26 @@
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<!-- custum -->
+<!-- custom -->
 <script src="./index.main.js"></script>
 <script src="js/index.js"></script>
+<script>
+
+    $(document).ready(function(){
+
+        $('#demo-carousel-auto').carousel();
+
+        setInterval(function() {
+
+            $('#demo-carousel-auto').carousel('next');
+
+        }, 1500);
+
+
+
+    });
+
+</script>
 
 
 </body>
