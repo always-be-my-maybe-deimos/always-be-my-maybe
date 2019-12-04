@@ -11085,7 +11085,7 @@ var deleteItem = function deleteItem(id) {
   return fetch("/api/cart/".concat(id), config).then(function (res) {
     return res.json();
   }).then(function (data) {
-    return data;
+    return console.log("dataaaa", data);
   })["catch"](function (e) {
     return console.log(e);
   });
