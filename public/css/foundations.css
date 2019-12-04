@@ -2,7 +2,31 @@
   padding: 0 30px;
 
 }
-
-/*#foundation-image {*/
-/*  height: 13rem;*/
-/*}*/
+#logo {
+  height: 4rem;
+}
+#container {
+  padding: 0;
+}
+#banner-foundation {
+  width: 100%;
+  padding: 0;
+}
+.card-image {
+  height: 150px;
+}
+.card-image > img {
+  height: 100%;
+}
+.card-content {
+  height: 150px;
+}
+@media screen and (min-width: 768px) {
+  .card-content {
+    height: 200px;
+  }
+  #logo {
+    height: 4.5rem;
+    margin-left: 10px;
+  }
+}

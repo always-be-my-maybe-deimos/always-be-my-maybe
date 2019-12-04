@@ -1,33 +1,64 @@
+body {
+  background-image: linear-gradient(#CE96FB, #FF8FCF)
+}
 #cart {
   width: 100%;
+  height: 100vh;
   padding: 0 30px;
-}
-#banner {
-  /*padding: 30px;*/
+  position: relative;
+  z-index: -1;
 }
 
+#logo {
+  height: 4rem;
+}
 #banner {
   height: 200px;
-  /*padding: 5%*/
 }
-#banner > div {
+#pink-wrapper {
+  background: #E700E2;
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 #coupon {
   color: #FFFFFF;
   text-shadow: 4px 3px 0px #7A7A7A;
-  font-size: 5vh;
 }
+#code {
+  height: 40%;
+  width: 100%;
+  color: #f8bbd0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #hr-one {
   height: 5px;
   background: black;
   border-radius: 30%;
 }
-/*#card-wrapper {*/
-/*  display: flex;*/
-/*  flex-wrap: wrap;*/
-/*}*/
+#footer {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background-image: url("../images/banner.png");
+  background-size: contain;
+  z-index: 12;
+  left: 0
+}
+@media screen and (min-width: 768px) {
+  .card-content {
+    height: 200px;
+  }
+  #logo {
+    height: 4.5rem;
+    margin-left: 10px;
+  }
+}

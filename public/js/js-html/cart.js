@@ -6,11 +6,11 @@ $(document).ready(function () {
     let cartTotal = 0
     //! handles
     let wrapper = $('#card-wrapper')
-    
     //! GET CART
    const requestCart = () => {
        getItems()
            .then(data =>{
+               $('#number').html(data.length)
                $('#cart-amount').html(`${data.length} Items in Cart`)
                console.log("data", data)
                wrapper.html('')
@@ -18,10 +18,11 @@ $(document).ready(function () {
                    cartID.push(d.id)
                    cartTotal += d.price
                    let html =
-                       `  <div class="col s12 m6 l4">
+                       `  <div class="col s12 m6 l4" id="card">
     <div class="card horizontal">
-      <div class="card-image">
-        <img src="https://images.unsplash.com/photo-1498842812179-c81beecf902c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60">
+      <div class="card-image" id="card-image">
+        <img src="../../images/Screen%20Shot%202019-12-03%20at%201.57.03%20PM.png"
+       id="image">
       </div>
       <div class="card-stacked">
         <div class="card-content">
@@ -61,12 +62,13 @@ id="delete-${d.id}"><i class="material-icons">clear</i></a>
         arr.forEach(a => {
             if(a.id == id){
                 let answer = confirm(`Are you sure you want to remove this item from your cart?`)
-                if(answer) deleteItem(id)
-                    .then((data)=>  {
-                        console.log("data", data)
-                        getItems()
-                    })
-                    .catch(()=> console.log("ERROR"))            }
+                if(answer) {
+                    deleteItem(id)
+                        .then(()=> {
+                            requestCart()
+                        })
+                }
+            }
         })
 
     }

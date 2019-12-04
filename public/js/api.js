@@ -28,7 +28,7 @@ export const deleteItem = id => {
     }
     return fetch(`/api/cart/${id}`, config)
         .then((res)=> res.json())
-        .then((data)=> data)
+        .then((data)=> console.log("dataaaa", data))
         .catch((e)=> console.log(e))
 
 }
