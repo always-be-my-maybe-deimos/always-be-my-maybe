@@ -10770,6 +10770,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
 
   var requestCart = function requestCart() {
     Object(_api__WEBPACK_IMPORTED_MODULE_1__["getItems"])().then(function (data) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('#num').html(data.length);
       jquery__WEBPACK_IMPORTED_MODULE_0___default()('#cart-amount').html("".concat(data.length, " Items in Cart"));
       console.log("data", data);
       wrapper.html('');

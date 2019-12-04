@@ -11,6 +11,7 @@ $(document).ready(function () {
     const requestCart = () => {
         getItems()
             .then(data =>{
+                $('#num').html(data.length)
                 $('#cart-amount').html(`${data.length} Items in Cart`)
                 console.log("data", data)
                 wrapper.html('')
