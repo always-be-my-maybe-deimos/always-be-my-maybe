@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Always-Be-My-Maybe</title>
-<!--    MATERIALIZE-->
+    <!--    MATERIALIZE-->
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<!--    CUSTOM-->
+    <!--    CUSTOM-->
     <link rel="stylesheet" href="./css/carty.css">
     
     
@@ -20,17 +20,14 @@
         });
     </script>
 </head>
-<body>
-<div id="cart">
+<body id="cart">
 <!--<div class="black">-->
 <!--    <h1 class="brand-logo center white-text" id="cart-amount">cart</h1>-->
 <!--</div>-->
 <!--START NAV-->
 <nav class="nav-extended black">
     <div class="nav-wrapper">
-        <a href="index.html" class="brand-logo pink-text">
-            <img src="./images/always.png" alt="logo" id="logo">
-        </a>
+        <a href="#" class="brand-logo pink-text">Logo</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons pink-text">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="index.html">Home</a></li>
@@ -54,34 +51,13 @@
 <!--banner-->
 
 <div id="banner" class="card">
-    <div  id="pink-wrapper">
-       <h4 id="coupon">SHOPPING BAG</h4>
-        <div class="black card" id="code">
-        <h5>Save 15% : ABMM15</h5>
-        </div>
-        <div id="items-in-cart">
-            <p id="cart-amount"><span id="number"></span>in cart!</p>
-        </div>
+    <div class="pink lighten-4" id="pink-wrapper">
+        <div id="coupon" class="center">COUPON CODE</div>
     </div>
 </div>
 <hr id="hr-one">
 <div id="card-wrapper" class="row"></div>
-    <div id="checkout">
-        <!--    form-->
-        <div class="row">
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <input id="coupon-input" type="text" class="validate" />
-                        <label for="coupon-input">Coupon</label>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <!--    end form-->
-    </div>
-<div id="footer"></div>
-</div>
+
 <script src="./cart.main.js"></script>
 </body>
 </html>

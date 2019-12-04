@@ -1,3 +1,14 @@
 [
-
+  {
+    "id": "6791cd1d-ae8e-4e62-9a95-952dfd83468a",
+    "color": "Foundation #105",
+    "description": "Fair-Warm",
+    "price": 35
+  },
+  {
+    "id": "bf18b981-b07b-42fd-b478-f5b2671a8d2c",
+    "color": "Foundation #100",
+    "description": "Fair-Neutral",
+    "price": 35
+  }
 ]
