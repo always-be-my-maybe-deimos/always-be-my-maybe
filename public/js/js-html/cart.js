@@ -22,7 +22,7 @@ $(document).ready(function () {
                         `  <div class="col s12 m6 l4">
     <div class="card horizontal">
       <div class="card-image">
-        <img src="https://images.unsplash.com/photo-1498842812179-c81beecf902c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60">
+        <img src="../../images/Screen%20Shot%202019-12-03%20at%201.57.03%20PM.png">
       </div>
       <div class="card-stacked">
         <div class="card-content">
