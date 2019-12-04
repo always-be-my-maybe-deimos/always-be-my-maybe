@@ -49,13 +49,22 @@ $(document).ready(function(){
                 console.log("found: ", f)
                 // cart.push(f)
                 postItem(f)
-                console.log("cart: ", cart)
-                return alert(`Lipstick ${f.color} Added To Cart`)
+                    .then((res)=> res.json())
+                    .then((data)=> console.log("DATA", data))
+                    .catch(()=> console.log(`POST ERROR`))
+                // console.log("cart: ", cart)
+                // return alert(`Lipstick ${f.color} Added To Cart`)
             }
         })
     }
 
     displayLipsticks()
+
+    const getAmountInCart = () => {
+        getItems()
+            .then(data => console.log('CART DATA: ', data))
+    }
+    getAmountInCart()
 
 })
 

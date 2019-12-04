@@ -1,20 +1,3 @@
 [
-  {
-    "id": "890853aa-fd31-4b6d-a418-64602d970cd6",
-    "color": "Foundation #100",
-    "description": "Fair-Neutral",
-    "price": 35
-  },
-  {
-    "id": "9fd06661-ead4-4cde-86f0-5f63fc0c5eb3",
-    "color": "Foundation #130",
-    "description": "Fair-Olive",
-    "price": 35
-  },
-  {
-    "id": "8820751f-fe8b-47cb-802c-ccfd3e8e914a",
-    "color": "Foundation #450",
-    "description": "Tan-Neutral",
-    "price": 35
-  }
+
 ]
