@@ -16,5 +16,19 @@
     "color": "Foundation #100",
     "description": "Fair-Neutral",
     "price": 35
+  },
+  {
+    "id": "5353e227-258c-4c27-8823-fce2cd68aab0",
+    "color": "SAUCY",
+    "hex": "FF7F50",
+    "description": "Peachy Nude",
+    "price": 19
+  },
+  {
+    "id": "a4602627-99ff-47b7-8bb2-36c865950393",
+    "color": "BREATHING FIRE",
+    "hex": "FF00FF",
+    "description": "Bright Warm Fushia",
+    "price": 19
   }
 ]
