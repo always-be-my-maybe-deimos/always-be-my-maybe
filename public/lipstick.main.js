@@ -11137,14 +11137,27 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
       if (f.id === num) {
         console.log("found: ", f); // cart.push(f)
 
-        Object(_api__WEBPACK_IMPORTED_MODULE_2__["postItem"])(f);
-        console.log("cart: ", cart);
-        return alert("Lipstick ".concat(f.color, " Added To Cart"));
+        Object(_api__WEBPACK_IMPORTED_MODULE_2__["postItem"])(f).then(function (res) {
+          return res.json();
+        }).then(function (data) {
+          return console.log("DATA", data);
+        })["catch"](function () {
+          return console.log("POST ERROR");
+        }); // console.log("cart: ", cart)
+        // return alert(`Lipstick ${f.color} Added To Cart`)
       }
     });
   };
 
   displayLipsticks();
+
+  var getAmountInCart = function getAmountInCart() {
+    Object(_api__WEBPACK_IMPORTED_MODULE_2__["getItems"])().then(function (data) {
+      return console.log('CART DATA: ', data);
+    });
+  };
+
+  getAmountInCart();
 });
 
 /***/ }),
