@@ -11116,9 +11116,15 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
 
   var displayEyeshadows = function displayEyeshadows() {
     _products_eyeshadow__WEBPACK_IMPORTED_MODULE_1__["default"].forEach(function (f, i) {
-      idArr.push(f.id);
-      var html = "<div class=\"col s12 m7 l2\">\n            <div class=\"card\"><br>\n            <div class=\"card-image card-img\">\n                <img src=\"../../images/eyeshadow-pot.png\" class=\"card-img\" style=\"background-color:#".concat(f.hex, "\">\n            </div>\n            <div class=\"card-content center-align\">\n                <p><h5 class=\"color\">").concat(f.color, "</h5></p><br>\n                <p>").concat(f.description, "</p>\n                <p>").concat(f.price, "</p>\n            </div>\n            <div class=\"card-action center-align\">\n                <a class=\"waves-effect waves-light btn\"\n                id=\"eyeshadows-").concat(f.id, "\"><i class=\"material-icons small\">\n                    shopping_basket</i></a>\n\n            </div>\n        </div>\n    </div>");
-      cardWrapper.append(html);
+      if ("".concat(f.color) !== "KEANU COAST") {
+        idArr.push(f.id);
+        var html = "<div class=\"col s12 m7 l2\">\n            <div class=\"card\"><br>\n            <div class=\"card-image card-img\">\n                <img src=\"../../images/eyeshadow-pot.png\" class=\"card-img\" style=\"background-color:#".concat(f.hex, "\">\n            </div>\n            <div class=\"card-content center-align\">\n                <p><h5 class=\"color\">").concat(f.color, "</h5></p><br>\n                <p>").concat(f.description, "</p>\n                <p>").concat(f.price, "</p>\n            </div>\n            <div class=\"card-action center-align\">\n                <a class=\"waves-effect waves-light btn\"\n                id=\"eyeshadows-").concat(f.id, "\"><i class=\"material-icons small\">\n                    shopping_basket</i></a>\n\n            </div>\n        </div>\n    </div>");
+        cardWrapper.append(html);
+      } else {
+        var _html = "<div class=\"col s12 m7 l2\">\n            <div class=\"card\"><br>\n            <div class=\"card-image card-img\">\n                <img src=\"../../images/eyeshadow-pot.png\" class=\"card-img keanu\">\n            </div>\n            <div class=\"card-content center-align\">\n                <p><h5 class=\"color\">".concat(f.color, "</h5></p><br>\n                <p>").concat(f.description, "</p>\n                <p>").concat(f.price, "</p>\n            </div>\n            <div class=\"card-action center-align\">\n                <a class=\"waves-effect waves-light btn\"\n                id=\"eyeshadows-").concat(f.id, "\"><i class=\"material-icons small\">\n                    shopping_basket</i></a>\n\n            </div>\n        </div>\n    </div>");
+
+        cardWrapper.append(_html);
+      }
     });
     addToCart(idArr);
   };
@@ -11236,9 +11242,9 @@ var eyeshadows = [{
   price: 18.00
 }, {
   id: uuid(),
-  color: "PACIFIC COAST",
+  color: "KEANU COAST",
   description: "Cream",
-  hex: 'F4C430',
+  // hex: 'F4C430',
   price: 18.00
 }, {
   id: uuid(),

@@ -14,9 +14,15 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--  END MATERIAL-->
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./css/found.css">
     <title>Lipsticks</title>
     <style>
+        #lipsticks {
+            padding: 0 30px;
+        }
+        #logo {
+            height: 4rem;
+            width: 4rem;
+        }
         img {
             max-height: 300px;
             max-width: 30px;
@@ -39,29 +45,33 @@
         .jumbotron .container {
             max-width: 100%; /* allows the jumbotron to adjust on smaller widths */
         }
+        .banner {
+            width: 100%;
+            padding: 0;
+        }
     </style>
 </head>
 <body id="lipsticks">
-<header class="sticky-top">
-    <ul id="header">
-        <li><a class="pink" href="">MAKEUP</a></li>
-        <li><a class="yellow" href="">BRUSHES + TOOLS</a></li>
-        <li id="logo">
-            <div class="logoTop">ALWAYS</div>
-            <div class="logoMid">BE MY</div>
-            <div class="logoBottom">MAYBE</div>
-        </li>
-        <li><a class="pink" href="">ACCESSORIES</a></li>
-        <li><a class="yellow" href="">LOTION</a></li>
-        <li id="checkout"><a class="pink" href=""><i class="fas fa-shopping-bag"></i>
-            <p class="yellow">$0.00</p></a></li>
-    </ul>
-</header>
+<nav class="nav-extended black">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo pink-text">
+            <img src="./images/always.png" alt="logo" id="logo" class="responsive-img">
+        </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons pink-text">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lipsticks.html">Lipstick</a></li>
+            <li><a href="foundations.html">Foundations</a></li>
+            <li><a href="eyeshadow.html">Eye Shadows</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </div>
+</nav>
 <!-- end nav -->
 <!-- Banner -->
 <div class="jumbotron">
-    <div class="container">
-        <img src="./images/lips-face.jpeg" alt="img" class="responsive-img" id="banner-foundation">
+    <div class="card">
+        <img src="./images/lips-face.jpeg" alt="img" class="responsive-img banner" id="banner-foundation">
     </div>
 </div>
 <!-- end banner -->
