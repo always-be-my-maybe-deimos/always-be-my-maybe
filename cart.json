@@ -12,9 +12,38 @@
     "price": 35
   },
   {
+<<<<<<< HEAD
     "id": "e7f743f7-3b31-4b97-8848-eaf7cadb3399",
     "color": "Foundation #100",
     "description": "Fair-Neutral",
     "price": 35
+=======
+    "id": "a4602627-99ff-47b7-8bb2-36c865950393",
+    "color": "BREATHING FIRE",
+    "hex": "FF00FF",
+    "description": "Bright Warm Fushia",
+    "price": 19
+  },
+  {
+    "id": "75cd498f-8522-4ac2-aca1-ed11517f8870",
+    "color": "SILVER LINING",
+    "description": "Shimmer",
+    "hex": "aaa9ad",
+    "price": 18
+  },
+  {
+    "id": "24f74e0d-573f-44c5-bad4-6f0b64b3773a",
+    "color": "ANGEL EYES",
+    "description": "Matte",
+    "hex": "E97451",
+    "price": 18
+  },
+  {
+    "id": "4674f786-2ab1-4b83-837d-b990ac7739b8",
+    "color": "FRENCH ROAST",
+    "description": "Matte",
+    "hex": "8A3324",
+    "price": 18
+>>>>>>> 5e5bfcb17e181e5ea1a1f8c1ac64d12880b60dca
   }
 ]
