@@ -63,9 +63,9 @@ const eyeshadows = [
     price: 18.00
   }, {
     id: uuid(),
-    color: "PACIFIC COAST",
+    color: "KEANU COAST",
     description: "Cream",
-    hex: 'F4C430',
+    // hex: 'F4C430',
     price: 18.00
   }, {
     id: uuid(),

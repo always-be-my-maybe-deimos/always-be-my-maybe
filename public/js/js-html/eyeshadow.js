@@ -8,6 +8,7 @@ $(document).ready(function(){
     let cardWrapper = $('#cards-wrapper')
     const displayEyeshadows = () => {
         eyeshadows.forEach((f,i)=> {
+            if(`${f.color}` !== "KEANU COAST"){
             idArr.push(f.id)
             let html =
                 `<div class="col s12 m7 l2">
@@ -29,6 +30,28 @@ $(document).ready(function(){
         </div>
     </div>`
             cardWrapper.append(html)
+            } else {
+                let html =
+                    `<div class="col s12 m7 l2">
+            <div class="card"><br>
+            <div class="card-image card-img">
+                <img src="../../images/eyeshadow-pot.png" class="card-img keanu">
+            </div>
+            <div class="card-content center-align">
+                <p><h5 class="color">${f.color}</h5></p><br>
+                <p>${f.description}</p>
+                <p>${f.price}</p>
+            </div>
+            <div class="card-action center-align">
+                <a class="waves-effect waves-light btn"
+                id="eyeshadows-${f.id}"><i class="material-icons small">
+                    shopping_basket</i></a>
+
+            </div>
+        </div>
+    </div>`
+                cardWrapper.append(html)
+            }
         })
         addToCart(idArr)
     }
