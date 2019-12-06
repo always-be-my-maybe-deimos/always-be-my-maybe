@@ -1,93 +1,106 @@
+
 body {
-  background-image: linear-gradient(#CE96FB, #FF8FCF)
+  background-image: linear-gradient(#CE96FB, #FF8FCF);
+}
+.navbar{
+  background-color: black!important;
+}
+.navbar-toggler{
+  background-color: #ff00e4!important;
 }
 
-body header {
-  background-color: black;
-  height: 18vh
+.pink{
+  color: #ff00e4 !important;
+}
+.yellow{
+  color: #f6eb00 !important;
 }
 
-body header #header {
+#logo{
+  display: inline-block;
+}
+.logoTop{
+  text-align: center;
+  color: #ef2ece;
+  background-color: #f5eb36;
+  width: 100px;
+}
+.logoMid{
+  text-align: center;
+  color: #efeb27;
+  background-color: #41c848;
+  width: 100px;
+}
+.logoBottom{
+  text-align: center;
+  color: #f81101;
+  background-color: #39c5f8;
+  width: 100px;
+}
+#checkout{
   display: flex;
-  list-style: none;
-  justify-content: space-evenly;
-  align-items: center
+  flex-direction: row;
+  text-align: center;
+}
+.fa-shopping-bag {
+  font-size: 30px;
 }
 
-body header #checkout {
-  display: flex !important;
-  flex-direction: row !important
+
+
+/*///////////////////////////////////////////*/
+/*///////////////CAROUSEL///////////////////*/
+/*/////////////////////////////////////////*/
+
+#carouselExampleControls{
+  margin-bottom: 10vh;
 }
 
-body .logoPic {
-  padding-top: 20px
+/*////////////////CAROUSEL END//////////////////////////*/
+
+/*///////////////////////////////////////////*/
+/*///////////////SHOP///////////////////////*/
+/*/////////////////////////////////////////*/
+.card-deck{
+  background-color: #CE96FB;
+  margin-bottom: 10vh;
+  box-shadow: black 2px 2px 2px;
+}
+.card{
+  background-color: #ea3ddd;
+}
+.shopButton{
+background-color: #f5ea4e;
+/*position: absolute;*/
+/*  bottom: -10px;*/
+/*  left: 0;*/
+  width: 100%;
+  border-radius: 8px;
+
 }
 
-body #shop {
-  background: rgba(255, 255, 255, 0.7);
-  height: 45vh;
+/*////////////////SHOP END//////////////////////////*/
+
+/*///////////////////////////////////////////*/
+/*///////////////FOR SALE///////////////////*/
+/*/////////////////////////////////////////*/
+
+#onSale{
   margin-top: 10vh;
   margin-bottom: 10vh;
-  box-shadow: 4px 4px 4px
 }
 
-body #shopHeader {
-  text-align: center
-}
 
-body .shopMenu {
-  display: flex;
-  justify-content: space-evenly
-}
+/*////////////////FOR SALE END//////////////////////////*/
 
-body .shop {
-  border: black 1px solid;
-  border-radius: 7%;
-  text-align: center;
-  height: 300px;
-  width: 200px
-}
+/*///////////////////////////////////////////*/
+/*///////////////FOOTER/////////////////////*/
+/*/////////////////////////////////////////*/
 
-body #onSale {
-  margin-top: 10vh;
-  margin-bottom: 10vh
-}
-
-body footer {
-  background-color: black;
-  height: 40vh
-}
-
-body #banner {
-  display: flex
-}
-
-body #ban1 {
-  width: 50vw
-}
-
-body #ban2 {
-  width: 50vw
-}
-
-body #footer {
-  padding-top: 30px;
-  list-style: none;
-  display: flex;
-  background-color: black;
-  margin-right: 10%
-}
-
-body #footer li a {
-  padding: 30px 30px;
-  text-decoration: none;
-  font-size: 20px
-}
-
-body #footer li a:hover {
-  color: white
-}
-
-body .foot {
-  font-size: 30px
+.jumbotron{
+  margin-bottom: 0;
+  background-image: url("../images/banner.png");
+  background-size: 100% 100%;
+  height: 20vh;
+  background-repeat: no-repeat;
 }

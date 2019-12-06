@@ -4,118 +4,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Always-Be-My-Maybe</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/4db56fe07d.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-<nav class="nav-extended black">
-    <div class="nav-wrapper">
-        <a href="#" class="brand-logo pink-text">Always Be My Maybe</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons pink-text">menu</i></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="lipsticks.html">Lipstick</a></li>
-            <li><a href="foundations.html">Foundations</a></li>
-            <li><a href="eyeshadows.html">Eye Shadows</a></li>
-            <li><a href="cart.html">Cart</a></li>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a id="logo" class="navbar-brand" href="index.html">
+        <div class="logoTop">ALWAYS</div>
+        <div class="logoMid">BE MY</div>
+        <div class="logoBottom">MAYBE</div>
+    </a>
+    <button class="navbar-toggler pink" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon pink"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link pink" href="#">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link yellow" href="eyeshadow.html">EYESHADOW</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pink" href="foundations.html">FOUNDATION</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link yellow" href="lipsticks.html">LIPSTICK</a>
+            </li>
         </ul>
+        <span class="navbar-text">
+      <a class="nav-link" href="cart.html"><i class="fas fa-shopping-bag pink"></i></a>
+    </span>
     </div>
 </nav>
-<div class="col s12 m4 center">
-    <img class="logoPic responsive-img" src="images/always.png" alt="">
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/carousel3.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="images/carousel1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="images/carousel2.png" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 </div>
 
-<!-- shop menu -->
-<div id="shop" class="hide-on-med-and-down">
-    <h2 id="shopHeader" class="pink-text accent-2">SHOP</h2>
-    <div class="shopMenu">
-        <div class="shop card">
-            <h4 class="pink-text accent-2">FOUNDATION</h4>
-            <button class="shopButton">SHOP NOW</button>
+<div class="card-deck">
+    <div class="card">
+        <img src="images/eyeshadow-pot.png" class="card-img-top" alt="..." style="height: 80%">
+        <div class="card-body">
+            <h5 class="card-title">EYESHADOW</h5>
+            <a href="eyeshadow.html"><button class="shopButton" style="box-shadow: black 2px 2px 2px">SHOP NOW</button></a>
         </div>
-        <div class="shop card">
-            <h4 class="pink-text accent-2">LIPSTICK</h4>
-            <button class="shopButton">SHOP NOW</button>
-        </div>
-        <div class="shop card">
-            <h4 class="pink-text accent-2">EYESHADOW</h4>
-            <button class="shopButton">SHOP NOW</button>
+    </div>
+    <div class="card">
+        <img src="images/face-found.jpg" class="card-img-top" alt="..." style="height: 80%">
+        <div class="card-body">
+            <h5 class="card-title">FOUNDATION</h5>
+            <a href="foundations.html"><button class="shopButton" style="box-shadow: black 2px 2px 2px">SHOP NOW</button></a>        </div>
+    </div>
+    <div class="card">
+        <img src="images/lipstickmain.jpeg" class="card-img-top" alt="..." style="height: 80%">
+        <div class="card-body">
+            <h5 class="card-title">LIPSTICK</h5>
+            <a href="lipsticks.html"><button class="shopButton" style="box-shadow: black 2px 2px 2px">SHOP NOW</button></a>
         </div>
     </div>
 </div>
-<!-- end shop menu -->
-<!-- on sale menu -->
-<div class="container">
 
-    <h3>Materialize Carousel Demo</h3>
-
-    <div class="carousel carousel-slider" id="demo-carousel-auto" data-indicators="true">
-
-        <a class="carousel-item" href=""><img src="images/carousel-2.jpeg"></a>
-
-        <a class="carousel-item" href=""><img src="images/carousel-3.png"></a>
-
-        <a class="carousel-item" href=""><img src="images/carousel-4.png"></a>
-
-        <a class="carousel-item" href=""><img src="images/carousel-5.jpeg"></a>
-
-        <a class="carousel-item" href=""><img src="images/carousel-6.jpeg"></a>
-
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
     </div>
-
 </div>
-
-
-
-<!-- end on sale menu -->
-
-<footer>
-    <div id="banner">
-        <img id="ban1" src="../public/images/banner.png" alt="">
-        <img id="ban2" src="../public/images/banner.png" alt="">
-    </div>
-    <ul id="footer">
-        <li><a class="yellow-text accent-2" href="">CONTACT US</a></li>
-        <li><a class="pink-text accent-2" href="">FAQS</a></li>
-        <li><a class="yellow-text accent-2" href="">STORE LOCATOR</a></li>
-        <li><a class="pink-text accent-2" href=""><i class="foot fab fa-instagram"></i></a></li>
-        <li><a class="yellow-text accent-2" href=""><i class="foot fab fa-facebook-f"></i></a></li>
-    </ul>
-</footer>
-
 
 <script
         src="https://code.jquery.com/jquery-2.2.4.js"
         integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
         crossorigin="anonymous"></script>
-<!-- materialize -->
-
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 <!-- custom -->
 <script src="./index.main.js"></script>
 <script src="js/index.js"></script>
-<script>
-
-    $(document).ready(function(){
-
-        $('#demo-carousel-auto').carousel();
-
-        setInterval(function() {
-
-            $('#demo-carousel-auto').carousel('next');
-
-        }, 1500);
-
-
-
-    });
-
-</script>
-
-
 </body>
 </html>
